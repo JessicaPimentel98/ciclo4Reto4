@@ -15,13 +15,13 @@ import java.util.Optional;
 
 public class UserService {
     /**
-     *
+     *Instancia UserRepository
      */
     @Autowired
     private UserRepository userRepository;
 
     /**
-     * Get = List of All Users
+     * Método que Lista usuarios
      * @return
      */
     public List<User> getAll() {
@@ -29,7 +29,7 @@ public class UserService {
     }
 
     /**
-     * Get = User by its id
+     * Lista el usuario por ID
      * @param id
      * @return
      */
@@ -38,7 +38,7 @@ public class UserService {
     }
 
     /**
-     * This method saves a new user
+     * Método que permite almacenar usuarios
      * @param user
      * @return
      */
@@ -60,7 +60,7 @@ public class UserService {
     }
 
     /**
-     * This method updates a user
+     * Método que actualiza un usuario
      * @param user
      * @return
      */
@@ -110,7 +110,7 @@ public class UserService {
     }
 
     /**
-     * This method checks if an email exists
+     * Método que verifica si un email existe
      * @param email
      * @return
      */
@@ -119,7 +119,7 @@ public class UserService {
     }
 
     /**
-     * This method deletes a User
+     * Método que elimina un usuario
      * @param userId
      * @return
      */
@@ -132,7 +132,7 @@ public class UserService {
     }
 
     /**
-     * This method verifies if a user is registered by its email and password
+     * Método que verifica la autenticación de un usuario
      * @param email
      * @param password
      * @return
